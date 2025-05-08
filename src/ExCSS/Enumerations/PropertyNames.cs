@@ -145,6 +145,12 @@
         public static readonly string MarginLeft = "margin-left";
         public static readonly string MarginTop = "margin-top";
         public static readonly string MarginBottom = "margin-bottom";
+        public static readonly string MarginInline = "margin-inline";
+        public static readonly string MarginInlineStart = "margin-inline-start";
+        public static readonly string MarginInlineEnd = "margin-inline-end";
+        public static readonly string MarginBlock = "margin-block";
+        public static readonly string MarginBlockStart = "margin-block-start";
+        public static readonly string MarginBlockEnd = "margin-block-end";
         public static readonly string Margin = "margin";
         public static readonly string Marker = "marker";
         public static readonly string MarkerEnd = "marker-end";
@@ -171,6 +177,12 @@
         public static readonly string PaddingLeft = "padding-left";
         public static readonly string PaddingBottom = "padding-bottom";
         public static readonly string Padding = "padding";
+        public static readonly string PaddingBlock = "padding-block";
+        public static readonly string PaddingBlockStart = "padding-block-start";
+        public static readonly string PaddingBlockEnd = "padding-block-end";
+        public static readonly string PaddingInline = "padding-inline";
+        public static readonly string PaddingInlineStart = "padding-inline-start";
+        public static readonly string PaddingInlineEnd = "padding-inline-end";
         public static readonly string PageBreakAfter = "page-break-after";
         public static readonly string PageBreakBefore = "page-break-before";
         public static readonly string PageBreakInside = "page-break-inside";
@@ -239,5 +251,11 @@
         public static readonly string Src = "src";
         public static readonly string ObjectFit = "object-fit";
         public static readonly string ObjectPosition = "object-position";
+        public static readonly string InsetInline = "inset-inline";
+        public static readonly string InsetInlineStart = "inset-inline-start";
+        public static readonly string InsetInlineEnd = "inset-inline-end";
+        public static readonly string InsetBlock = "inset-block";
+        public static readonly string InsetBlockStart = "inset-block-start";
+        public static readonly string InsetBlockEnd = "inset-block-end";
     }
 }

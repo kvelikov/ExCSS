@@ -192,7 +192,7 @@ namespace ExCSS
             AddLonghand(PropertyNames.FlexBasis, () => new FlexBasisProperty(), true);
             AddLonghand(PropertyNames.FlexDirection, () => new FlexDirectionProperty());
             AddShorthand(PropertyNames.FlexFlow, () => new FlexFlowProperty(),
-                PropertyNames.FlexDirection, 
+                PropertyNames.FlexDirection,
                 PropertyNames.FlexWrap);
             AddLonghand(PropertyNames.FlexGrow, () => new FlexGrowProperty());
             AddLonghand(PropertyNames.FlexShrink, () => new FlexShrinkProperty());
@@ -216,13 +216,13 @@ namespace ExCSS
             AddLonghand(PropertyNames.FontStretch, () => new FontStretchProperty(), true, true);
 
             AddShorthand(PropertyNames.Gap, () => new GapProperty(),
-                PropertyNames.RowGap, 
+                PropertyNames.RowGap,
                 PropertyNames.ColumnGap);
 
             AddLonghand(PropertyNames.Height, () => new HeightProperty(), true);
-            
+
             AddLonghand(PropertyNames.JustifyContent, () => new JustifyContentProperty());
-            
+
             AddLonghand(PropertyNames.Left, () => new LeftProperty(), true);
             AddLonghand(PropertyNames.LetterSpacing, () => new LetterSpacingProperty());
             AddLonghand(PropertyNames.LineHeight, () => new LineHeightProperty(), true);
@@ -244,6 +244,18 @@ namespace ExCSS
             AddLonghand(PropertyNames.MarginLeft, () => new MarginLeftProperty(), true);
             AddLonghand(PropertyNames.MarginTop, () => new MarginTopProperty(), true);
             AddLonghand(PropertyNames.MarginBottom, () => new MarginBottomProperty(), true);
+
+            AddShorthand(PropertyNames.MarginInline, () => new MarginInlineProperty(),
+                PropertyNames.MarginInlineStart,
+                PropertyNames.MarginInlineEnd);
+            AddLonghand(PropertyNames.MarginInlineStart, () => new MarginInlineStartProperty(), true);
+            AddLonghand(PropertyNames.MarginInlineEnd, () => new MarginInlineEndProperty(), true);
+
+            AddShorthand(PropertyNames.MarginBlock, () => new MarginBlockProperty(),
+                PropertyNames.MarginBlockStart,
+                PropertyNames.MarginBlockEnd);
+            AddLonghand(PropertyNames.MarginBlockStart, () => new MarginBlockStartProperty(), true);
+            AddLonghand(PropertyNames.MarginBlockEnd, () => new MarginBlockEndProperty(), true);
 
             AddLonghand(PropertyNames.MaxHeight, () => new MaxHeightProperty(), true);
             AddLonghand(PropertyNames.MaxWidth, () => new MaxWidthProperty(), true);
@@ -273,6 +285,18 @@ namespace ExCSS
             AddLonghand(PropertyNames.PaddingRight, () => new PaddingRightProperty(), true);
             AddLonghand(PropertyNames.PaddingLeft, () => new PaddingLeftProperty(), true);
             AddLonghand(PropertyNames.PaddingBottom, () => new PaddingBottomProperty(), true);
+
+            AddShorthand(PropertyNames.PaddingInline, () => new PaddingInlineProperty(),
+                PropertyNames.PaddingInlineStart,
+                PropertyNames.PaddingInlineEnd);
+            AddLonghand(PropertyNames.PaddingInlineStart, () => new PaddingInlineStartProperty(), true);
+            AddLonghand(PropertyNames.PaddingInlineEnd, () => new PaddingInlineEndProperty(), true);
+
+            AddShorthand(PropertyNames.PaddingBlock, () => new PaddingBlockProperty(),
+                PropertyNames.PaddingBlockStart,
+                PropertyNames.PaddingBlockEnd);
+            AddLonghand(PropertyNames.PaddingBlockStart, () => new PaddingBlockStartProperty(), true);
+            AddLonghand(PropertyNames.PaddingBlockEnd, () => new PaddingBlockEndProperty(), true);
 
             AddLonghand(PropertyNames.PageBreakAfter, () => new PageBreakAfterProperty());
             AddLonghand(PropertyNames.PageBreakBefore, () => new PageBreakBeforeProperty());
